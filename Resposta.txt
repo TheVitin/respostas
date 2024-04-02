@@ -35,10 +35,10 @@
     SELECT NOME, DIRETOR,ATOR_PRINCIPAL FROM `ENTRETERIMENTO` WHERE GENERO LIKE "%Crime%" AND ATOR_PRINCIPAL="John Travolta"; 
 
 12. Liste os itens que a duração seja superior a 2 horas e que o ator NÃO seja Christian Bale ou Tim Robbins 
-
+    SELECT * FROM ENTRETERIMENTO WHERE ATOR_PRINCIPAL NOT LIKE "Christian Bale" AND ATOR_PRINCIPAL NOT LIKE "Tim Robbins ";
 
 13. Liste os itens que NÃO seja de Comédia ou drama;
-    
+    SELECT * FROM ENTRETERIMENTO WHERE GENERO NOT LIKE '%comédia%' AND GENERO NOT LIKE '%drama%';
 
 14. Liste todos os itens que foram criados, que não seja dos anos 2000, 2001 ou 2002;
     SELECT * FROM `ENTRETERIMENTO` WHERE ANO_LANCAMENTO NOT IN (2000, 2001, 2002); 
