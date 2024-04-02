@@ -35,7 +35,7 @@
     SELECT NOME, DIRETOR,ATOR_PRINCIPAL FROM `ENTRETERIMENTO` WHERE GENERO LIKE "%Crime%" AND ATOR_PRINCIPAL="John Travolta"; 
 
 12. Liste os itens que a duração seja superior a 2 horas e que o ator NÃO seja Christian Bale ou Tim Robbins 
-    SELECT * FROM `ENTRETERIMENTO` WHERE DURACAO_MINUTOS > 120 AND ATOR_PRINCIPAL NOT IN ("Christian Bale, Tim Robbins"); 
+
 
 13. Liste os itens que NÃO seja de Comédia ou drama;
     
